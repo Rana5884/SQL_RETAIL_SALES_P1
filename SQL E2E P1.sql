@@ -1,6 +1,9 @@
+-- CHECKING IF THE DATA IS IMPORTED SUCCESSFULLY
 select * from retail_data
 limit 2;
 
+
+-- CHEKING THE SHAPE OF THE DATA
 select count(*)
 from retail_data
 
@@ -13,7 +16,7 @@ Select * from retail_data
 where customer_id is null;
 
 
--- checking for null values for the entire data
+-- checking for null values for the entire dataset
 
 Select count(*) from retail_data 
 where transactions_id is null
